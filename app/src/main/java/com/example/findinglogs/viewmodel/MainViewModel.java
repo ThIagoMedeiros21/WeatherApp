@@ -41,9 +41,12 @@ public class MainViewModel extends AndroidViewModel {
 
     private void startFetching() {
         fetchAllForecasts();
-        handler.postDelayed(fetchRunnable, FETCH_INTERVAL);
     }
 
+    public void refresh() {
+        handler.removeCallbacks(fetchRunnable);
+        fetchAllForecasts();
+    }
     private void fetchAllForecasts() {
         if (Logger.ISLOGABLE) Logger.d(TAG, "fetchAllForecasts()");
         HashMap<String, String> localizations = mRepository.getLocalizations();

@@ -20,7 +20,7 @@ The app is functional, but there are still some improvements and bug fixes to be
 - [ OK ] 🔑 Add your API key to the `local.properties` file:
 `WEATHER_API_KEY= <your-api-key-here>`
 - [ OK ] 📊 Fetch and display **pressure** data from the API
-- [ ] 🔄 Implement data refresh on **Refresh** button click
+- [ OK ] 🔄 Implement data refresh on **Refresh** button click
 - [ ] 🎨 Fix broken **weather icons**
 - [ ] 🧹 Eliminate **duplicate data** issues
 
